@@ -8,6 +8,7 @@
 
 plugins {
     kotlin("multiplatform") version "1.9.0"
+    id("com.ncorti.ktfmt.gradle") version "0.13.0"
 }
 
 java {
