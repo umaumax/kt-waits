@@ -22,21 +22,21 @@ repositories {
 kotlin {
     targets {
         jvm()
-            linuxX64() {
+        linuxX64() {
             binaries {
-            executable {
-                entryPoint = "com.umaumax.waits.main"
-                runTask?.args("")
+                executable {
+                    entryPoint = "com.umaumax.waits.main"
+                    runTask?.args("")
+                }
             }
-        }
         }
         macosArm64() {
             binaries {
-            executable {
-                entryPoint = "com.umaumax.waits.main"
-                runTask?.args("")
+                executable {
+                    entryPoint = "com.umaumax.waits.main"
+                    runTask?.args("")
+                }
             }
-        }
         }
     }
     sourceSets {
