@@ -37,6 +37,8 @@ kotlin {
             dependencies {
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.2")
                 implementation("org.jetbrains.kotlinx:kotlinx-cli:0.3.5")
+                implementation("com.michael-bull.kotlin-result:kotlin-result:1.1.18")
+                implementation("com.michael-bull.kotlin-result:kotlin-result-coroutines:1.1.18")
             }
         }
         val commonTest by getting {
