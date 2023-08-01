@@ -54,6 +54,10 @@ kotlin {
         val linuxX64Main by getting {
             dependsOn(commonMain)
         }
+
+        val macosArm64Main by getting {
+            dependsOn(commonMain)
+        }
     }
 }
 
