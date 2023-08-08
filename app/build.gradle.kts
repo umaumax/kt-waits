@@ -3,6 +3,8 @@ plugins {
     id("com.ncorti.ktfmt.gradle") version "0.13.0"
 }
 
+val ktor_version: String by project
+
 java {
    toolchain.languageVersion.set(JavaLanguageVersion.of(18))
 }
@@ -38,6 +40,8 @@ kotlin {
                 implementation("org.jetbrains.kotlinx:kotlinx-cli:0.3.5")
                 implementation("com.michael-bull.kotlin-result:kotlin-result:1.1.18")
                 implementation("com.michael-bull.kotlin-result:kotlin-result-coroutines:1.1.18")
+                implementation("io.ktor:ktor-client-core:$ktor_version")
+                implementation("io.ktor:ktor-client-cio:$ktor_version")
             }
         }
         val commonTest by getting {
